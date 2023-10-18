@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+
+/* layer popup */
+.layer_popup {display:none; position:fixed; top:0; left:0; z-index:1100; width:100%; height:100%; background:rgba(0, 0, 0, 0.7); overflow-y:auto;}
+.layer_popup .dim {position:absolute; top:0; left:0; width:100%; height:100%; }
+.layer_popup .contents {position:absolute; top:80px; left:50%; z-index:1100; padding:0 20px 20px; background:#fff; border-top:3px solid #1c59a4; margin-bottom:50px;}
+.layer_popup .contents h2 {padding:21px 0 21px 25px; color:#000; font-size:16px; font-weight:700; background:url('../images/bullet_detail_g_title.gif') no-repeat left; border-bottom:1px solid #ccc;}
+.layer_popup .contents .explain {margin:10px 0 0; padding:10px 0; text-align:center; border:1px solid #c3c3c3; background:#f7f7f7;}
+.layer_popup .contents .explain,
+.layer_popup .contents .explain p {line-height:18px; color:#222; font-size:12px;}
+.layer_popup .contents .explain .spot {color:#f00; font-size:16px;font-weight:700}
+.layer_popup .contents .btn_close_layer {position:absolute; top:23px; right:20px; width:15px; height:15px; background:url('../images/btn_layer_close.gif') no-repeat; cursor:pointer;}
+.layer_popup .contents .btn_area {zoom:1;}
+.layer_popup .contents .btn_area:after {display:block; content:""; clear:both;}
+.layer_popup .contents .btn_area {margin:15px 0 0; padding:15px 0 0; border-top:1px solid #ccc;}
+.layer_popup .contents .btn_area .btn {display:inline-block; width:calc(100% - 42px); height:38px; line-height:38px; padding:0 20px; text-align:center; color:#fff; border:1px solid #0e386c; background:#1c59a4;}
+.layer_popup .contents .btn_area .btn.white {color:#1c59a4; border:1px solid #0e386c; background:#fff;}
+.layer_popup .contents .btn_area .btn.blue {color:#fff; border:1px solid #0e386c; background:#1c59a4;}
+.layer_popup .contents .btn_area .btn.gray {color:#fff; border:1px solid #3d3d3d; background:#606060;}
+.layer_popup .contents .btn_area .btn.red {color:#fff; border:1px solid #6f0909; background:#c90000;}
+.layer_popup .contents .btn_area .btn.disabled {cursor:default;}
+.layer_popup .contents .btn_area .btn.list {background:#1c59a4; border:1px solid #10386a;}
+.layer_popup .contents .btn_area .btn.list span {display:inline-block; padding-left:26px; color:#fff; font-size:12px; background:url('../images/bg_page_btn_list.gif') no-repeat left;}
+.layer_popup .contents .btn_area.two .btn {width:calc((100% / 2) - 50px);}
+.layer_popup .contents .btn_area.two .btn:first-child {float:left;}
+.layer_popup .contents .btn_area.two .btn:last-child {float:right;}
+.layer_popup .contents .btn_area.three {text-align:center;}
+.layer_popup .contents .btn_area.three .btn {width:calc((100% / 3) - 50px);}
+.layer_popup .contents .btn_area.three .btn:first-child {float:left;}
+.layer_popup .contents .btn_area.three .btn:last-child {float:right;}
+
+.layer_popup .contents .common_form {margin:15px 0 0;}
+.layer_popup .contents .common_form .box {margin-top:5px}
+.layer_popup .contents .common_form .box:first-child {margin-top:0}
+
+
+/* SMS간편 발송 및 이전발송내역 */
+.layer_popup.simple_sms_send_popup .cont {padding:15px 0 0; zoom:1;}
+.layer_popup.simple_sms_send_popup .cont:after {display:block; content:""; clear:both;}
+.layer_popup.simple_sms_send_popup .cont.sms_w .phone .textarea_box {height:160px;}
+.layer_popup.simple_sms_send_popup .cont.sms_w .phone .textarea_box textarea {height:140px; padding:10px;}
+.layer_popup.simple_sms_send_popup .cont.sms_w .phone .to_list .input_box input {background:#f7f7f7;}
+.layer_popup.simple_sms_send_popup .cont .common_list {float:right; width:530px;}

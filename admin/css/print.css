@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+
+/* 1: Base Setting
+=========================================================================================== */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, input,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img,
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video, button {margin:0; padding:0;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+li {list-style-type:none;}
+img, fieldset, iframe {border:0; border:none;}
+table {border-collapse:collapse; border-spacing:0; width:100%;}
+caption {display:none;}
+caption, th, td {vertical-align:middle;}
+legend {color:#000;}
+img {max-width:100%; vertical-align:middle;}
+li img, dd img {vertical-align:middle;}
+input, select,textarea {vertical-align:middle;}
+abbr, acronym {border-bottom:1px dotted; cursor: help;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+em, i, address {font-style:normal;}
+a {color:#000; text-decoration:none;}
+
+
+
+/* layer popup */
+#print.contents {position:static; z-index:1100; width: 100% !important; margin-left: 0 !important; padding:0 20px 20px; background:#fff; border-top:3px solid #1c59a4; margin-bottom:50px; box-sizing:border-box;}
+#print.contents h2 {padding:21px 0 21px 25px; color:#000; font-size:16px; font-weight:700; background:url("https://www.kpanews.co.kr/admin/css/../images/bullet_detail_g_title.gif") no-repeat left; border-bottom:1px solid #ccc;}
+#print.contents .btn_close_layer {display: none;}
+#print.contents .btn_area {}
+
+#print.contents .common_form {margin:10px 0 0;}
+#print.contents .common_form .box {margin-top:5px}
+#print.contents .common_form .box:first-child {margin-top:0}
+
+#print.contents .btn_close_layer {display: none;}
+
+#print.contents .btn_area {zoom:1;}
+#print.contents .btn_area:after {display:block; content:""; clear:both;}
+#print.contents .btn_area {margin:16px 0 0; padding:16px 0 0; border-top:1px solid #ccc;}
+#print.contents .btn_area .btn {display:inline-block; width:calc(100% - 42px); height:38px; line-height:38px; padding:0 20px; text-align:center; color:#fff; border:1px solid #0e386c; background:#1c59a4;}
+#print.contents .btn_area .btn.white {color:#1c59a4; border:1px solid #0e386c; background:#fff;}
+#print.contents .btn_area .btn.blue {color:#fff; border:1px solid #0e386c; background:#1c59a4;}
+#print.contents .btn_area .btn.gray {color:#fff; border:1px solid #3d3d3d; background:#606060;}
+#print.contents .btn_area .btn.red {color:#fff; border:1px solid #6f0909; background:#c90000;}
+#print.contents .btn_area .btn.disabled {cursor:default;}
+
+/* common form */
+.common_form .g_title {margin:20px 0; padding-left:25px; color:#000; font-size:16px; font-weight:700; background:url("https://www.kpanews.co.kr/admin/css/../images/bullet_detail_g_title.gif") no-repeat left;}
+.common_form .g_title .explain {font-size:11px; line-height:14px; color:#888;font-weight:normal;margin-left:5px}
+.common_form .g_table {width:100%; table-layout:fixed;}
+.common_form .g_table th,
+.common_form .g_table td {padding:4px 10px; height:32px; font-weight:normal; text-align:left; vertical-align:middle; border:1px solid #c3c3c3;}
+.common_form .g_table tr:first-child th,
+.common_form .g_table tr:first-child td {border-top:1px solid #265ea0;}
+.common_form .g_table th {color:#000; font-size:12px; font-weight:700; background:#f7f7f7; width: 120px;}
+.common_form .g_table td {color:#000; font-size:12px;  line-height:14px}
+.common_form .g_table tr.center th,
+.common_form .g_table tr.center td {text-align:center;}
+.common_form .g_table th.center,
+.common_form .g_table td.center {text-align:center;}
+.common_form .g_table td .box {position:relative; zoom:1; font-size:0;}
+.common_form .g_table td .box:after {display:block; content:""; clear:both;}
+.common_form .g_table td .box span,
+.common_form .g_table td .normal {display:inline-block; height:30px; line-height:30px; color:#000; font-size:12px; vertical-align: top;}
+.common_form .g_table td .fc_blue {color:#1266FF;}
+.common_form .g_table td .fc_red {color:#ff0000;}
+.common_form .g_table td .textarea_box {width:100%;}
+.common_form .g_table td .textarea_box textarea {width:calc(100% - 20px); min-height:80px; padding:10px; resize:none;}
+.common_form .tabs_btn {margin-top:30px;}
+.common_form .tabs_btn .tabs ul {zoom:1;}
+.common_form .tabs_btn .tabs ul:after {display:block; content:""; clear:both;}
+.common_form .tabs_btn .tabs ul li {float:left; width:calc(100% - 2px); border:1px solid #d7d7d7; border-bottom:1px solid #1c59a4; border-right:0;}
+.common_form .tabs_btn .tabs ul.tab6 li { width:calc((100% / 6) - 2px);}
+.common_form .tabs_btn .tabs ul.tab2 li { width:calc((100% / 2) - 2px);}
+.common_form .tabs_btn .tabs ul.tab3 li { width:calc((100% / 3) - 2px);}
+.common_form .tabs_btn .tabs ul li:last-child {border-right:1px solid #d7d7d7;}
+.common_form .tabs_btn .tabs ul li:fist-child {margin-left:0;}
+.common_form .tabs_btn .tabs ul li.curr {border:1px solid #1c59a4; border-bottom:0;}
+.common_form .tabs_btn .tabs ul li a {display:block; height:40px; line-height:44px; color:#000; font-size:12px; text-align:center;}
+.common_form .tabs_btn .tabs ul li.curr a {color:#1c59a4;}
+.common_form .tabs_cont {margin-top:10px;}
+
+.common_form .list_header {margin-bottom:15px; zoom:1;}
+.common_form .list_header:after {display:block; content:""; clear:both;}
+.common_form .list_header .cnt {float:left; zoom:1;}
+.common_form .list_header .cnt:after {display:block; content:""; clear:both;}
+.common_form .list_header .cnt dt,
+.common_form .list_header .cnt dd {display:block; float:left; font-size:14px;}
+.common_form .list_header .cnt dt {font-weight:700;}
+.common_form .list_header .cnt dd {margin-left:5px; color:#1c59a4;}
+.common_form .list_header .summary {float:right; color:#f00;}
+.common_form .list_header .category {float:right; zoom:1;}
+.common_form .list_header .category:after {display:block; content:""; clear:both;}
+.common_form .list_header .category a {display:inline-block; padding:0 12px; height:15px; line-height:15px; color:#999; border-left:1px dotted #c3c3c3;}
+.common_form .list_header .category a:first-child {border-left:0;}
+.common_form .list_header .category a:last-child {padding:0 2px 0 12px;}
+.common_form .list_header .category a.curr {color:#1c59a4;}
+.common_form .list_header .tabs {float:left; zoom:1;}
+.common_form .list_header .tabs:after {display:block; content:""; clear:both;}
+.common_form .list_header .tabs a {display:inline-block; padding:0 12px; height:15px; line-height:15px; color:#999; border-left:1px dotted #c3c3c3;}
+.common_form .list_header .tabs a:first-child {border-left:0;}
+.common_form .list_header .tabs a:last-child {padding:0 2px 0 12px;}
+.common_form .list_header .tabs a.curr {color:#1c59a4;}
+
+
+@page {
+	size: A4;
+	margin: 0;
+}
+@media print {
+	html, body {
+		width: 210mm;
+		height: 297mm;
+		background: #fff;
+	}
+	body {-webkit-print-color-adjust: exact;}
+	#print {
+		margin: 0;
+		border: initial;
+		border-radius: initial;
+		width: initial;
+		min-height: initial;
+		box-shadow: initial;
+		background: initial;
+		page-break-after: always;
+	}
+	#print .btn_area {display: none;}
+	#print .common_form th {width:120px}
+}

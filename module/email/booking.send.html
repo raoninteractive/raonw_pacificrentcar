@@ -1,0 +1,217 @@
+<div style="width:800px; padding:20px 20px 10px; border:5px solid #ddd;">
+	<!-- <div style="text-align:center; margin-bottom:20px">
+		<img src="{{site_url}}/images/common/logo.png">
+		<p style="height:2px; background:#d82224"></p>
+	</div> -->
+
+	<div style="margin:20px 0 0; line-height:150%; font-size:14px; font-family:Dotum, '돋움';">
+		<h3>Reservation information</h3>
+		<table cellpadding="0" cellspacing="0" style="width:100%; border-top:1px solid #d9d9d9; font-size:14px;">
+			<colgroup span="2">
+				<col width="18%"/>
+				<col width="32%"/>
+                <col width="18%"/>
+				<col width="32%"/>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Car Model</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{상품}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Option</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{옵션}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Departure Date</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{한국 출발 항공편}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Hotel</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{투숙호텔}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Pick Up Date/Time</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{픽업날짜}}
+					</td>
+                    <th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Rental Period</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{반납일}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Pick Up Place</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{픽업위치}}
+					</td>
+                    <th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Return Place</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{반납위치}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Passport Name</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{영문이름}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Local Name</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{한글이름}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Cell Phone</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{휴대번호}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Email</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{이메일}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Assistance Sheet</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{아동보조시트}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Additional Options</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{추가선택사항}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Airport Pickup</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{공항픽업}}
+					</td>
+				</tr>
+                <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Payment Amount</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{지불금액}}
+					</td>
+				</tr>
+                <!-- <tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Reservation agency fee</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{예약수수료}}
+					</td>
+				</tr> -->
+			</tbody>
+		</table>
+
+		<!-- <h3>Driver Information</h3>
+		<h4 style="margin:0;">Driver 1</h4>
+		<table cellpadding="0" cellspacing="0" style="width:100%; border-top:1px solid #d9d9d9; font-size:14px;">
+			<colgroup span="2">
+				<col width="18%"/>
+				<col width="32%"/>
+                <col width="18%"/>
+				<col width="32%"/>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Driver Name</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{운전자명1}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Home Address</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{한국주소1}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Local Address Or Hotel</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{현지주소1}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Cell phone</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{핸드폰번호1}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Date Of Birth</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{생년월일1}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Driver License Number</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{운전면허증번호1}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Driver License Expiration</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{운전면허증만료일1}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4 style="margin:10px 0 0;">Driver 2</h4>
+		<table cellpadding="0" cellspacing="0" style="width:100%; border-top:1px solid #d9d9d9; font-size:14px;">
+			<colgroup span="2">
+				<col width="18%"/>
+				<col width="32%"/>
+				<col width="18%"/>
+				<col width="32%"/>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Driver Name</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{운전자명2}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Home Address</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{한국주소2}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Local Address Or Hotel</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;" colspan="3">
+						{{현지주소2}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Cell phone</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{핸드폰번호2}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Date Of Birth</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{생년월일2}}
+					</td>
+				</tr>
+				<tr>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Driver License Number</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{운전면허증번호2}}
+					</td>
+					<th style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:center; background-color:#ebeaea;">Driver License Expiration</th>
+					<td style="padding:5px; border-bottom:1px solid #d9d9d9; text-align:left; line-height:150%; padding-left:15px;">
+						{{운전면허증만료일2}}
+					</td>
+				</tr>
+			</tbody>
+		</table> -->
+	</div>
+
+	<div style="margin:20px 0 10px;">
+		<div style="background-color:#888; font-size:11px; color:#fff; padding-left:25px; font-family:Dotum, '돋움';">
+			<p style="padding:10px 0px; margin:0px;">Copyright © pacific rent a car All Rights Reserved</p>
+		</div>
+	</div>
+</div>

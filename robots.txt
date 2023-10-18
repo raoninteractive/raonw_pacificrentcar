@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /module
+Disallow: /admin
+Disallow: /upload
+Disallow: /images
+Disallow: /css
+Disallow: /js
+Disallow: /schedule
+Crawl-delay: 60

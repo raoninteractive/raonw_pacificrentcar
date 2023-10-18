@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^pacificrentcar.kr [NC]
+RewriteRule ^(.*)$ http://www.pacificrentcar.kr/$1 [L,R]
+
+# SSL 이동
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
